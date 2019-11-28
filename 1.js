@@ -79,12 +79,12 @@ function rand(t)
             
             /******************load&Unload*****************/
             window.addEventListener("load",function(e){
-                setInterval(removeItems,10000);
+                setInterval(removeItems,5000);
                 GenertLocalSortage(e,"loding");
                 //localStorage.setItem("loading", JSON.stringify(e.type,e.target,new Date()));
             });
             window.addEventListener("unload",function(e){
-                setInterval(removeItems,5000);
+                //setInterval(removeItems,5000);
                 GenertLocalSortage(e,"unloding");
                 //localStorage.setItem("loading", JSON.stringify(e.type,e.target,new Date()));
             });
